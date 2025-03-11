@@ -13,14 +13,20 @@ function exercise() {
 exercise();
 
 //exercise 1
-/*
+
 const person1 = {
     Name: "John",
-    CurrentAge: 27,
+    currentAge: 32,
     maxAge: 65,
     amountperWeek: 5
 
 };
+const leftAge = person1.maxAge - person1.currentAge;
+const leftWeek = leftAge * 365 / 7;
+const totalPotatos = leftWeek * person1.amountperWeek;
+console.log(`${person1.Name} has ${person1.currentAge} years and will eat ${totalPotatos} potatoes until age of ${person1.maxAge}`);
+
+/*
 const person2 = {
     Name: "Don",
     CurrentAge: 28,
