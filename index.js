@@ -14,33 +14,41 @@ exercise();
 
 //exercise 1
 
-const person1 = {
+const user = {
     Name: "John",
     currentAge: 32,
     maxAge: 65,
     amountperWeek: 5
 
 };
-const leftAge = person1.maxAge - person1.currentAge;
+const leftAge = user.maxAge - user.currentAge;
 const leftWeek = leftAge * 365 / 7;
-const totalPotatos = leftWeek * person1.amountperWeek;
-console.log(`${person1.Name} has ${person1.currentAge} years and will eat ${totalPotatos} potatoes until age of ${person1.maxAge}`);
+const totalPotatos = leftWeek * user.amountperWeek;
+console.log(`${user.Name} has ${user.currentAge} years and will eat ${totalPotatos} potatoes until age of ${user.maxAge}`);
 
-/*
-const person2 = {
+
+const userOne = {
+    Name: "John",
+    currentAge: 32,
+    maxAge: 65,
+    amountperWeek: 5
+
+};
+
+const usertwo = {
     Name: "Don",
     CurrentAge: 28,
     maxAge: 65,
     amountperWeek: 6
 
 };
-const person3 = {
+const userThree = {
     Name: "BOn",
     CurrentAge: 29,
     maxAge: 65,
     amountperWeek: 7
 
-};*/
+};
 
 //exercise 2
 function totalAmount(Name, currentAge, maxAge, amountperWeek) {
@@ -53,31 +61,25 @@ function totalAmount(Name, currentAge, maxAge, amountperWeek) {
 totalAmount("tamanna", 30, 65, 5);
 
 //exercise 3
+const threeVariable = {
+    message1: "My name is Tamanna",
+    message2: "I am from Bangladesh",
+    message3: "Now I live in Spain"
 
-function variableOne() {
-    let firstOne;
-    firstOne = console.log("Hello");
-}
-variableOne();
+};
 
-
-function variableTwo() {
-    let secondOne;
-    secondOne = console.log("World");
-}
-variableTwo();
-
-function variableThree() {
-    let thirdOne;
-    thirdOne = console.log("Happy");
-}
-variableThree();
+console.log(threeVariable.message1);
+console.log(threeVariable.message2);
+console.log(threeVariable.message3);
 
 //array function remove space
-
+let res1;
 const myNewfunction = (string) => {
-    let res1;
+
     res1 = string.replaceAll(" ", "");
-    return console.log(res1);
+    return res1;
 }
+
 myNewfunction("8 j 8   mBliB8g  imjB8B8  jl  B");
+console.log(res1);
+
